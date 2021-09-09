@@ -2,7 +2,7 @@
 
 export FLASK_APP=project.server
 export APP_SETTINGS="project.server.config.ProductionConfig"
-flask db init
+flask db stamp head
 flask db migrate
 flask db upgrade
 #flask run --host=0.0.0.0 --port=5000
